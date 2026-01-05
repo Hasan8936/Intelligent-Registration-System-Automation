@@ -1,0 +1,26 @@
+{
+  "name": "intelligent-registration-system",
+  "version": "1.0.0",
+  "description": "Intelligent Registration System with automation testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server src -p 8080 -o",
+    "test": "cypress open",
+    "test:headless": "cypress run",
+    "test:headless:chrome": "cypress run --browser chrome"
+  },
+  "keywords": [
+    "registration",
+    "form",
+    "validation",
+    "automation",
+    "testing",
+    "cypress"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "http-server": "^14.1.1"
+  }
+}
