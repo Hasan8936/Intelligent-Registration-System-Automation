@@ -1,0 +1,14 @@
+node_modules
+cypress
+tests
+.git
+.gitignore
+README.md
+DEPLOYMENT_STATUS.md
+COMPLETION_SUMMARY.md
+DOCUMENTATION_INDEX.md
+TEST_REPORT.md
+test-results.txt
+TESTS_COMPLETE.md
+QUICK_START.md
+PROJECT_DETAILS.md

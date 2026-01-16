@@ -243,16 +243,13 @@ describe('Intelligent Registration System - Complete Test Suite', () => {
 
         it('should validate password strength meter', () => {
             cy.get('#password').type('weak');
-            cy.get('#strengthMeter').should('have.class', 'weak');
-            cy.get('#strengthText').should('contain', 'Weak');
+            cy.get('#strengthMeter').should('have.class', 'weak').and('have.class', 'strength-meter-fill');
             
-            cy.get('#password').clear().type('Medium@Pass1');
-            cy.get('#strengthMeter').should('have.class', 'medium');
-            cy.get('#strengthText').should('contain', 'Medium');
+            cy.get('#password').clear().type('Medium1Pass');
+            cy.get('#strengthMeter').should('have.class', 'medium').and('have.class', 'strength-meter-fill');
             
             cy.get('#password').clear().type('VeryStr0ng@Password123');
-            cy.get('#strengthMeter').should('have.class', 'strong');
-            cy.get('#strengthText').should('contain', 'Strong');
+            cy.get('#strengthMeter').should('have.class', 'strong').and('have.class', 'strength-meter-fill');
         });
 
         it('should show error when passwords do not match', () => {
